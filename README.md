@@ -1,9 +1,51 @@
-# React + Vite
+# Asukita Cocina
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a Asukita Cocina! Esta es una aplicación web donde podrás encontrar una amplia variedad de deliciosas recetas, consejos culinarios y mucho más para inspirarte en la cocina.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# ReactEj14
+- Explora una gran colección de recetas de todo el mundo.
+- Guarda tus recetas favoritas para acceder fácilmente a ellas más tarde.
+- Encuentra recetas para diferentes ocasiones y preferencias dietéticas.
+- Aprende trucos y técnicas de cocina con nuestros expertos chefs.
+
+## Cómo empezar
+
+1. Clona este repositorio en tu máquina local:
+
+git clone https://github.com/tu_usuario/asukita-cocina.git
+
+css
+Copy code
+
+2. Instala las dependencias del proyecto:
+
+cd asukita-cocina
+npm install
+
+markdown
+Copy code
+
+3. Inicia la aplicación:
+
+npm start
+
+markdown
+Copy code
+
+4. Abre tu navegador web y visita [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento.
+
+## Contribuir
+
+¡Estamos abiertos a contribuciones! Si tienes ideas para mejorar la aplicación, no dudes en enviar un pull request o abrir un issue.
+
+## Tecnologías utilizadas
+
+- React.js
+- React Router
+- Bootstrap
+- ...
+
+## Licencia
+
+Este proyecto no está bajo licencia.
