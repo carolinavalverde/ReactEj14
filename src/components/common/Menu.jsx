@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../../assets/coffee_Logo.png";
+import logo from "../../assets/logo.webp";
 import { Link, NavLink } from "react-router-dom";
 
 const Menu = () => {

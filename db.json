@@ -1,0 +1,31 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombreProducto": "Brownie de Chocolate",
+      "precio": 900,
+      "imagen": "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg",
+      "categoria": "Dulce",
+      "descripcion_breve": "Un brownie denso y deliciosamente chocolatoso.",
+      "descripcion_amplia": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+    },
+    {
+      "id": "2",
+      "nombreProducto": "Jugo de Naranja Natural",
+      "precio": 1300,
+      "imagen": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg",
+      "categoria": "Batidos",
+      "descripcion_breve": "Un jugo refrescante y lleno de vitaminas.",
+      "descripcion_amplia": "Nuestro jugo de naranja natural está hecho con naranjas frescas exprimidas a mano, sin adición de azúcares ni conservantes. Es una opción refrescante y saludable para acompañar tu desayuno o merienda."
+    },
+    {
+      "id": "d2a8",
+      "nombreProducto": "cafe",
+      "precio": "455",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg",
+      "categoria": "Infusiones",
+      "descripcion_breve": "gggggggggggggggggggggggggggggg",
+      "descripcion_amplia": "ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+    }
+  ]
+}
