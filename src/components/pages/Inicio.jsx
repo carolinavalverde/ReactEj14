@@ -25,13 +25,13 @@ const Inicio = () => {
 
   return (
     <section className="mainSection">
-      <img
+      {/* <img
         className="banner"
         src="https://images.pexels.com/photos/13591748/pexels-photo-13591748.jpeg"
         alt="fondo cafe"
-      />
+      /> */}
       <Container className="mt-5">
-        <h1 className="display-4">Nuestros Productos</h1>
+        <h1 className="display-4 text-center">Mis Recetas</h1>
         <hr />
 
         <Row>

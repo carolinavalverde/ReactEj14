@@ -10,6 +10,10 @@
 }
 .mainSection {
   flex-grow: 1;
+  background-color: rgb(236, 189, 124);
+  background-image: url('./assets/mainBg.png');
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 .banner {
