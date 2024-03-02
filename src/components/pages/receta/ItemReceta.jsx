@@ -57,13 +57,13 @@ const ItemReceta = ({ receta, setReceta }) => {
       <td>{receta.recetaTexto}</td>
       <td className="text-center">
         <Link
-          className="me-lg-2 btn btn-warning"
+          className="me-lg-2 btn btn-warning my-2"
           to={"/administrador/editar/" + receta.id}
         >
           <i className="bi bi-pencil-square"></i>
         </Link>
         <Button variant="danger" onClick={eliminarReceta}>
-          <i className="bi bi-trash"></i>
+          <i className="bi bi-trash my-2"></i>
         </Button>
       </td>
     </tr>

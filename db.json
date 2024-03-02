@@ -2,60 +2,59 @@
   "recetas": [
     {
       "id": "1",
-      "nombreReceta": "Ramen",
+      "nombreReceta": "Ramen PenPen",
       "imagen": "../src/assets/ramen.png",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Sopa japonesa con fideos y caldo aromático.",
+      "recetaTexto": "El ramen es un plato japonés reconfortante que consiste en fideos servidos en un caldo sabroso, generalmente a base de huesos de cerdo o pollo, con diversos acompañamientos como huevo marinado, carne de cerdo, cebolla verde y algas nori."
     },
-   
     {
       "id": "2",
-      "nombreReceta": "Mate",
+      "nombreReceta": "Mate Argentino SEELE",
       "imagen": "../src/assets/mate.jpg",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Infusión tradicional sudamericana con yerba mate.",
+      "recetaTexto": "El mate es una infusión característica de la cultura sudamericana, especialmente en Argentina, Uruguay y Paraguay. Se prepara con hojas secas y trituradas de la planta de yerba mate, se sirve en un recipiente llamado mate y se consume a través de una bombilla. Es una bebida social y con propiedades estimulantes debido a su contenido de cafeína."
     },
     {
       "id": "3",
-      "nombreReceta": "Pizza",
+      "nombreReceta": "Pizza NERV",
       "imagen": "../src/assets/pizza.webp",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Plato italiano con masa, tomate y queso derretido.",
+      "recetaTexto": "La pizza es un plato italiano que consiste en una base de masa cubierta con salsa de tomate y queso, y se hornea en un horno. Se puede complementar con una variedad de ingredientes como pepperoni, champiñones, jamón, pimientos, entre otros. Es una comida popular en todo el mundo y se puede encontrar en una amplia gama de estilos y variaciones."
     },
     {
       "id": "4",
-      "nombreReceta": "Asado",
+      "nombreReceta": "Asado Tercer Impacto",
       "imagen": "../src/assets/asado.jpg",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Corte de carne asado a la parrilla o al horno.",
+      "recetaTexto": "El asado es una técnica de cocina popular en países como Argentina, Uruguay y Brasil, que implica asar cortes de carne de res, cerdo, cordero o pollo a la parrilla o al horno. Se sazona con sal y a menudo se marina antes de cocinar para realzar el sabor. Es una comida socialmente significativa y se sirve comúnmente en reuniones familiares o eventos especiales."
     },
     {
       "id": "5",
-      "nombreReceta": "Milas con Puré",
+      "nombreReceta": "Milas con Puré para subir al robot",
       "imagen": "../src/assets/milasConPure.jpg",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Filetes de carne empanados con puré de papas.",
+      "recetaTexto": "Las milanesas con puré son un plato clásico de la cocina argentina que consiste en filetes de carne empanizados y fritos, generalmente de ternera, servidos con puré de papas. Las milanesas se suelen acompañar con limón y se sirven como plato principal en almuerzos o cenas familiares."
     },
     {
       "id": "6",
-      "nombreReceta": "Bombones de Chocolate",
+      "nombreReceta": "Bombones de Chocolate BakaShinji",
       "imagen": "../src/assets/bombonesDeChocolate.webp",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Dulces de chocolate en pequeñas porciones.",
+      "recetaTexto": "Los bombones de chocolate son pequeñas porciones de chocolate que a menudo están rellenas de ingredientes como nueces, caramelo, crema, o frutas secas. Se pueden hacer en una variedad de formas y sabores, y son un regalo popular para ocasiones especiales como cumpleaños, San Valentín o Navidad."
     },
     {
       "id": "7",
-      "nombreReceta": "Torta de Frutilla",
+      "nombreReceta": "Torta de Frutilla Ángel",
       "imagen": "../src/assets/tortaDeFrutilla.jpg",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Pastel con capas de bizcocho y crema de frutillas.",
+      "recetaTexto": "La torta de frutilla es un postre clásico que consta de capas de bizcocho esponjoso intercaladas con crema batida y rodajas de frutillas frescas. Se puede decorar con más frutillas en la parte superior para darle un toque visualmente atractivo. Es un postre popular en celebraciones como cumpleaños, bodas o reuniones familiares."
     },
     {
       "id": "8",
-      "nombreReceta": "Ensalada EVA",
+      "nombreReceta": "Ensalada EVA02",
       "imagen": "../src/assets/ensaladaEVA.jpg",
-      "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "descripcion": "Ensalada fresca con lechuga, tomate y aderezo.",
+      "recetaTexto": "La ensalada EVA es una ensalada fresca y saludable que combina lechuga, tomate, pepino, zanahoria y otros vegetales frescos, aderezada con vinagreta o aderezo de elección. Es una opción popular para acompañar platos principales o como plato principal en sí mismo, especialmente durante los meses más cálidos del año."
     }
   ]
 }
