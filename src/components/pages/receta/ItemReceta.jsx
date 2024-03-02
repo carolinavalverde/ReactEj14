@@ -54,6 +54,7 @@ const ItemReceta = ({ receta, setReceta }) => {
         ></img>
       </td>
       <td>{receta.descripcion}</td>
+      <td>{receta.recetaTexto}</td>
       <td className="text-center">
         <Link
           className="me-lg-2 btn btn-warning"
