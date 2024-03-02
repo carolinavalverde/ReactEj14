@@ -1,5 +1,5 @@
-const APIProductos = import.meta.env.VITE_API_PRODUCTO;
-// const APIProductos = process.env.VITE_API_PRODUCTO;
+const APIProductos = import.meta.env.VITE_API_RECETAS;
+// const APIProductos = process.env.VITE_API_RECETAS;
 console.log(APIProductos);
 
 //GET
