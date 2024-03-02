@@ -8,7 +8,6 @@ const Inicio = () => {
   const [recetas, setReceta] = useState([]);
 
   useEffect(() => {
-    //solicitar a la api traer las recetas
     obtenerReceta();
   }, []);
 
@@ -26,7 +25,7 @@ const Inicio = () => {
     }
   };
 
-  console.log(recetas);
+  // console.log(recetas);
 
   return (
     <section className="mainSection">
@@ -35,8 +34,8 @@ const Inicio = () => {
         <hr />
 
         <Row>
-          {recetas.map((recetas) => (
-            <CardReceta key={recetas.id} receta={recetas}></CardReceta>
+          {recetas.slice(0, 3).map((receta) => (
+            <CardReceta key={receta.id} receta={receta}></CardReceta>
           ))}
         </Row>
       </Container>

@@ -8,7 +8,6 @@ const Recetas = () => {
   const [recetas, setReceta] = useState([]);
 
   useEffect(() => {
-    //solicitar a la api traer las recetas
     obtenerReceta();
   }, []);
 
@@ -25,8 +24,6 @@ const Recetas = () => {
       });
     }
   };
-
-  console.log(recetas);
 
   return (
     <section className="mainSection">
