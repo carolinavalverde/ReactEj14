@@ -45,12 +45,27 @@ export const borrarReceta = async (id) => {
 };
 
 //GET de una unica receta
-export const obtenerReceta = async (id) => {
+// export const obtenerReceta = async (id) => {
+//   try {
+//     const respuesta = await fetch(APIRecetas + "/" + id);
+//     console.log(respuesta);
+//     return respuesta;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+export const obtenerRecetaPorId = async (id) => {
   try {
     const respuesta = await fetch(APIRecetas + "/" + id);
-    console.log(respuesta);
-    return respuesta;
+    if (respuesta.ok) {
+      const datos = await respuesta.json();
+      return datos;
+    } else {
+      throw new Error("Error al obtener la receta");
+    }
   } catch (error) {
     console.log(error);
+    throw new Error("Error de red");
   }
 };
