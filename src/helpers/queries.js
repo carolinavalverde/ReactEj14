@@ -45,16 +45,6 @@ export const borrarReceta = async (id) => {
 };
 
 //GET de una unica receta
-// export const obtenerReceta = async (id) => {
-//   try {
-//     const respuesta = await fetch(APIRecetas + "/" + id);
-//     console.log(respuesta);
-//     return respuesta;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-
 export const obtenerRecetaPorId = async (id) => {
   try {
     const respuesta = await fetch(APIRecetas + "/" + id);

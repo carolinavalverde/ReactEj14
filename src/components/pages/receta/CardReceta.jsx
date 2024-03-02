@@ -2,7 +2,7 @@ import { Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const CardReceta = ({ receta }) => {
-  const { imagen, nombreReceta, descripcion, recetaTexto, id } = receta;
+  const { imagen, nombreReceta, descripcion, id } = receta;
 
   return (
     <Col md={4} lg={3} className="mb-3">

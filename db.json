@@ -2,7 +2,7 @@
   "recetas": [
     {
       "id": "1",
-      "nombreReceta": "Ramen PenPen",
+      "nombreReceta": "Ramen Asukita",
       "imagen": "../src/assets/ramen.png",
       "descripcion": "Sopa japonesa con fideos y caldo aromático.",
       "recetaTexto": "El ramen es un plato japonés reconfortante que consiste en fideos servidos en un caldo sabroso, generalmente a base de huesos de cerdo o pollo, con diversos acompañamientos como huevo marinado, carne de cerdo, cebolla verde y algas nori."
