@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-import CardReceta from "./producto/CardReceta";
+import CardReceta from "./receta/CardReceta";
 import { useEffect, useState } from "react";
 import { leerReceta } from "../../helpers/queries";
 
@@ -21,7 +21,7 @@ const Inicio = () => {
     }
   };
 
-  console.log(receta);
+  console.log(recetas);
 
   return (
     <section className="mainSection">
@@ -31,8 +31,8 @@ const Inicio = () => {
         <hr />
 
         <Row>
-          {recetas.map((receta) => (
-            <CardReceta key={recetas.id} receta={receta}></CardReceta>
+          {recetas.map((recetas) => (
+            <CardReceta key={recetas.id} receta={recetas}></CardReceta>
           ))}
         </Row>
       </Container>

@@ -5,7 +5,7 @@
       "nombreReceta": "Ramen",
       "imagen": "../src/assets/ramen.png",
       "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "receta": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
     },
    
     {
@@ -13,14 +13,14 @@
       "nombreReceta": "Mate",
       "imagen": "../src/assets/mate.jpg",
       "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "receta": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
     },
     {
       "id": "3",
       "nombreReceta": "Pizza",
       "imagen": "../src/assets/pizza.webp",
       "descripcion": "Un brownie denso y deliciosamente chocolatoso.",
-      "receta": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
+      "recetaTexto": "Nuestro brownie de chocolate es un placer indulgente para los amantes del chocolate. Con una textura densa y un intenso sabor a chocolate, es el acompañamiento perfecto para tu café o té."
     }
   ]
 }

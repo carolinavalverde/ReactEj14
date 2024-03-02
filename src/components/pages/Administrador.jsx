@@ -1,5 +1,5 @@
 import { Button, Table } from "react-bootstrap";
-import ItemReceta from "./producto/ItemReceta";
+import ItemReceta from "./receta/ItemReceta";
 import { useEffect, useState } from "react";
 import { leerReceta } from "../../helpers/queries";
 import { Link } from "react-router-dom";

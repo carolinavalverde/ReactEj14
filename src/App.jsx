@@ -6,7 +6,7 @@ import Menu from "./components/common/Menu";
 import Error404 from "./components/pages/Error404";
 import Administrador from "./components/pages/Administrador";
 import Inicio from "./components/pages/Inicio";
-import FormularioReceta from "./components/pages/producto/FormularioReceta";
+import FormularioReceta from "./components/pages/receta/FormularioReceta";
 import DetalleReceta from "./components/pages/DetalleReceta";
 import Recetas from "./components/pages/Recetas";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
