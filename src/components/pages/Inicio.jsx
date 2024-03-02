@@ -2,6 +2,7 @@ import { Container, Row } from "react-bootstrap";
 import CardReceta from "./receta/CardReceta";
 import { useEffect, useState } from "react";
 import { leerReceta } from "../../helpers/queries";
+import Swal from "sweetalert2";
 
 const Inicio = () => {
   const [recetas, setReceta] = useState([]);
@@ -17,7 +18,11 @@ const Inicio = () => {
       const datos = await respuesta.json();
       setReceta(datos);
     } else {
-      //mostrar un mjs elegante de error al usuario de q en este momento no puede hacer esta transaccion
+      Swal.fire({
+        title: "Ocurrió un error",
+        text: `No se puede obtener las recetas, intente esta operación en unos minutos`,
+        icon: "error",
+      });
     }
   };
 
@@ -25,9 +30,8 @@ const Inicio = () => {
 
   return (
     <section className="mainSection">
-      
       <Container className="mt-5">
-        <h1 className="display-4">Mis Recetas</h1>
+        <h1 className="display-4 text-center">Mis Recetas</h1>
         <hr />
 
         <Row>
