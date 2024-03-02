@@ -31,7 +31,7 @@ function App() {
           element={
             <FormularioReceta
               editando={false}
-              titulo="Nuevo producto"
+              titulo="Agregue una Nueva Receta"
             ></FormularioReceta>
           }
         ></Route>
@@ -41,7 +41,7 @@ function App() {
           element={
             <FormularioReceta
               editando={true}
-              titulo="Editar producto"
+              titulo="Edite la Receta"
             ></FormularioReceta>
           }
         ></Route>
