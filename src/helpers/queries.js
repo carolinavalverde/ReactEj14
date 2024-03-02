@@ -1,11 +1,11 @@
-const APIProductos = import.meta.env.VITE_API_RECETAS;
+const APIRecetas = import.meta.env.VITE_API_RECETAS;
 // const APIProductos = process.env.VITE_API_RECETAS;
-console.log(APIProductos);
+console.log(APIRecetas);
 
 //GET
-export const leerProductos = async () => {
+export const leerReceta = async () => {
   try {
-    const respuesta = await fetch(APIProductos);
+    const respuesta = await fetch(APIRecetas);
     return respuesta;
   } catch (error) {
     console.log(error);
@@ -13,14 +13,14 @@ export const leerProductos = async () => {
 };
 
 //POST
-export const crearProducto = async (productoNuevo) => {
+export const crearReceta = async (recetaNueva) => {
   try {
-    const respuesta = await fetch(APIProductos, {
-      method: "POST", 
+    const respuesta = await fetch(APIRecetas, {
+      method: "POST",
       headers: {
-        "Content-Type":"application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(productoNuevo)
+      body: JSON.stringify(recetaNueva),
     });
     console.log(respuesta);
     return respuesta;
@@ -30,4 +30,27 @@ export const crearProducto = async (productoNuevo) => {
 };
 
 //PUT o PATCH
+
 //DELETE
+export const borrarReceta = async (id) => {
+  try {
+    const respuesta = await fetch(APIRecetas + "/" + id, {
+      method: "DELETE",
+    });
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+//GET de una unica receta
+export const obtenerReceta = async (id) => {
+  try {
+    const respuesta = await fetch(APIRecetas + "/" + id);
+    console.log(respuesta);
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};

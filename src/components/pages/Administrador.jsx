@@ -1,32 +1,32 @@
 import { Button, Table } from "react-bootstrap";
-import ItemProducto from "./producto/ItemProducto";
+import ItemReceta from "./producto/ItemReceta";
 import { useEffect, useState } from "react";
-import { leerProductos } from "../../helpers/queries";
+import { leerReceta } from "../../helpers/queries";
 import { Link } from "react-router-dom";
 
 const Administrador = () => {
-  const [productos, setProductos] = useState([]);
+  const [recetas, setReceta] = useState([]);
 
   useEffect(() => {
-    //solicitar a la api traer los productos
-    obtenerProductos();
+    //solicitar a la api traer las recetas
+    obtenerReceta();
   }, []);
 
-  const obtenerProductos = async () => {
-    const respuesta = await leerProductos();
+  const obtenerReceta = async () => {
+    const respuesta = await leerReceta();
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
-      setProductos(datos);
+      setReceta(datos);
     } else {
-      //mostrar un mjs elegante de error al usuario de q en este momento no puede hacer esta transaccion
+      //mostrar un mensaje de error al usuario
     }
   };
 
   return (
     <section className="container mainSection">
       <div className="d-flex justify-content-between align-items-center mt-5">
-        <h1 className="display-4 ">Productos disponibles</h1>
-        <Link className="btn btn-primary" to="/administrador/crear"> 
+        <h1 className="display-4 ">Recetas</h1>
+        <Link className="btn btn-primary" to="/administrador/crear">
           <i className="bi bi-file-earmark-plus"></i>
         </Link>
       </div>
@@ -35,16 +35,20 @@ const Administrador = () => {
         <thead>
           <tr className="text-center">
             <th>Cod</th>
-            <th>Producto</th>
-            <th>Precio</th>
+            <th>Nombre</th>
+
             <th>URL de Imagen</th>
-            <th>Categoria</th>
-            <th>Opciones</th>
+            <th>Descrición</th>
+            <th>Receta</th>
           </tr>
         </thead>
         <tbody>
-          {productos.map((producto) => (
-            <ItemProducto key={producto.id} producto={producto}></ItemProducto>
+          {recetas.map((receta) => (
+            <ItemReceta
+              key={recetas.id}
+              producto={receta}
+              setProductos={setReceta}
+            ></ItemReceta>
           ))}
         </tbody>
       </Table>
