@@ -4,10 +4,10 @@ import { borrarReceta, leerReceta } from "../../../helpers/queries";
 import { Link } from "react-router-dom";
 
 const ItemReceta = ({ receta, setReceta }) => {
-  const eliminarReceta = () => {
+  const eliminarReceta = async () => {
     Swal.fire({
-      title: "está seguro de eliminar la receta?",
-      text: "No se puede revertir ésta operación",
+      title: "¿Está seguro de eliminar la receta?",
+      text: "No se puede revertir esta operación",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
@@ -16,16 +16,16 @@ const ItemReceta = ({ receta, setReceta }) => {
       cancelButtonText: "Cancelar",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        //solicitar a la api eliminar la receta
+        // Solicitar a la API eliminar la receta
         const respuesta = await borrarReceta(receta.id);
         if (respuesta.status === 200) {
           Swal.fire({
             title: "Receta eliminada",
-            text: `La receta ${recetas.nombreReceta} fue eliminada correctamente`,
+            text: `La receta ${receta.nombreReceta} fue eliminada correctamente`,
             icon: "success",
           });
 
-          //actualizar tabla del administrador
+          // Actualizar tabla del administrador
           const respuestaNuevasRecetas = await leerReceta();
           if (respuestaNuevasRecetas.status === 200) {
             const nuevasRecetas = await respuestaNuevasRecetas.json();
@@ -33,8 +33,8 @@ const ItemReceta = ({ receta, setReceta }) => {
           }
         } else {
           Swal.fire({
-            title: "Ocurrio un error",
-            text: `La receta ${recetas.nombreReceta} no fue eliminada, intente ésta operacion en unos minutos`,
+            title: "Ocurrió un error",
+            text: `La receta ${receta.nombreReceta} no fue eliminada, intente esta operación en unos minutos`,
             icon: "error",
           });
         }
@@ -44,21 +44,20 @@ const ItemReceta = ({ receta, setReceta }) => {
 
   return (
     <tr>
-      <td className="text-center">{recetas.id}</td>
-      <td>{recetas.nombreReceta}</td>
-
+      <td className="text-center">{receta.id}</td>
+      <td>{receta.nombreReceta}</td>
       <td className="text-center">
         <img
-          src={recetas.imagen}
+          src={receta.imagen}
           className="img-thumbnail"
-          alt={recetas.nombreReceta}
+          alt={receta.nombreReceta}
         ></img>
       </td>
-      <td>{recetas.descripcion}</td>
+      <td>{receta.descripcion}</td>
       <td className="text-center">
         <Link
           className="me-lg-2 btn btn-warning"
-          to={"/administrador/editar/" + recetas.id}
+          to={"/administrador/editar/" + receta.id}
         >
           <i className="bi bi-pencil-square"></i>
         </Link>
