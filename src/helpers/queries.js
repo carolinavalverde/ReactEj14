@@ -30,6 +30,20 @@ export const crearReceta = async (recetaNueva) => {
 };
 
 //PUT o PATCH
+export const editarReceta = async (productoEditado, id) => {
+  try {
+    const respuesta = await fetch(APIRecetas + "/" + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(recetaEditada),
+    });
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 //DELETE
 export const borrarReceta = async (id) => {

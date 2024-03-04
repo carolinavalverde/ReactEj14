@@ -1,9 +1,13 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearReceta } from "../../../helpers/queries";
+import {
+  crearReceta,
+  obtenerRecetaPorId,
+  editarReceta,
+} from "../../../helpers/queries";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const FormularioReceta = ({ editando, titulo }) => {
   const {
@@ -11,31 +15,55 @@ const FormularioReceta = ({ editando, titulo }) => {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
   } = useForm();
   const { id } = useParams();
+  const navegacion = useNavigate();
 
   useEffect(() => {
     if (editando) {
-      //solicitar y mostrar el producto en el formullario
-      // cargarProductoEnFormulario();
+      cargarRecetaEnFormulario();
     }
-  });
+  }, []);
 
-  const cargarRecetaEnFormulario = () => {
-    // const respuesta = obtenerReceta()
+  const cargarRecetaEnFormulario = async () => {
+    const respuesta = await obtenerRecetaPorId(id);
+    if (respuesta.status === 200) {
+      const recetaBuscada = await respuesta.json();
+      console.log(recetaBuscada)
+      setValue("nombreReceta", recetaBuscada.nombreReceta);
+      setValue("imagen", recetaBuscada.imagen);
+      setValue("descripcion", recetaBuscada.descripcion);
+      setValue("receta", recetaBuscada.recetaTexto);
+    }
   };
 
   const datosValidados = async (receta) => {
-    //console.log(receta);
     if (editando) {
-      console.log("aqui editando una receta");
+      const respuesta = await editarReceta(receta, id);
+      console.log(respuesta);
+
+      if (respuesta.status === 200) {
+        Swal.fire({
+          title: "Receta editada",
+          text: `La receta de ${receta.nombreReceta} fue editada correctamente`,
+          icon: "success",
+        });
+
+        navegacion("/administrador");
+      } else {
+        Swal.fire({
+          title: "La receta no se pudo editar",
+          text: `La receta de ${receta.nombreReceta} no se pudo editar, intentelo nuevamente`,
+          icon: "error",
+        });
+      }
     } else {
-      //le voy a pedir a la api crear la receta nuevo
       const respuesta = await crearReceta(receta);
       if (respuesta.status === 201) {
         Swal.fire({
           title: "Receta creada",
-          text: `La receta: ${recetas.nombreReceta} fue creado correctamente`,
+          text: `La receta de ${receta.nombreReceta} fue creada correctamente`,
           icon: "success",
         });
 
