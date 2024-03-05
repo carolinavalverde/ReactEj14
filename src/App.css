@@ -50,3 +50,7 @@
   height: 200px;
   object-fit: cover;
 }
+
+.bgCardDetalleProducto {
+  background-color: rgba(255, 255, 255, 0.7);
+}

@@ -31,27 +31,30 @@ const DetalleReceta = () => {
     return null;
   }
 
-  const { imagen, nombreReceta, descripcion, recetaTexto } = receta;
+  const { imagen, nombreReceta, descripcion, ingredientes, recetaTexto } =
+    receta;
 
   return (
     <section className="mainSection">
       <div className="container my-5 col-9">
-        <Card>
+        <h2 className="text-center display-4 fw-bold mb-5">{nombreReceta}</h2>
+        <Card className="p-4 bgCardDetalleProducto border-0 rounded-1">
           <Row>
-            <Col md={6}>
-              <Card.Img
-                variant="top"
-                className="img-fluid"
-                src={receta.imagen}
-              />
+            <Col md={12} lg={6} className="d-flex justify-content-center">
+              <Card.Img variant="top" className="img-fluid" src={imagen} />
             </Col>
-            <Col md={6}>
+            <Col md={12} lg={6}>
               <Card.Body>
-                <Card.Title className="display-6 fw-bold text-center">
-                  {receta.nombreReceta}
+                <Card.Title className="text-center mb-4">
+                  Ingredientes
                 </Card.Title>
-                <hr />
-                <Card.Text>{receta.recetaTexto}</Card.Text>
+                <ul>
+                  {ingredientes.map((ingrediente, index) => (
+                    <li key={index}>{ingrediente}</li>
+                  ))}
+                </ul>
+                <Card.Title className="text-center mb-4">Receta</Card.Title>
+                <p>{recetaTexto}</p>
               </Card.Body>
             </Col>
           </Row>
