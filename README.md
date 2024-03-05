@@ -8,6 +8,10 @@
 - Encuentra recetas para diferentes ocasiones y preferencias dietéticas.
 - Aprende trucos y técnicas de cocina con nuestra experta chef.
 
+## Cómo ver el proyecto deployado
+Se encuentra disponible en: 
+https://blog-recetas-14.netlify.app/
+
 ## Cómo empezar
 
 1. Clona este repositorio en tu máquina local:
