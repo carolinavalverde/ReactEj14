@@ -5,9 +5,8 @@
 ## Características
 
 - Explora una gran colección de recetas de todo el mundo.
-- Guarda tus recetas favoritas para acceder fácilmente a ellas más tarde.
 - Encuentra recetas para diferentes ocasiones y preferencias dietéticas.
-- Aprende trucos y técnicas de cocina con nuestros expertos chefs.
+- Aprende trucos y técnicas de cocina con nuestra experta chef.
 
 ## Cómo empezar
 
@@ -43,8 +42,10 @@ Copy code
 
 - React.js
 - React Router
+- React Bootstrap
 - Bootstrap
-- ...
+- Json Server
+- Sweet Alert
 
 ## Licencia
 
