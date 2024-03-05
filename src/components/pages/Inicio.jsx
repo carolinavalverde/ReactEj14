@@ -25,8 +25,6 @@ const Inicio = () => {
     }
   };
 
-  // console.log(recetas);
-
   return (
     <section className="mainSection">
       <Container className="mt-5">

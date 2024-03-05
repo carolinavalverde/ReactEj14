@@ -17,7 +17,6 @@ const DetalleReceta = () => {
       const datosReceta = await obtenerRecetaPorId(id);
       setReceta(datosReceta);
     } catch (error) {
-      console.log(error);
       Swal.fire({
         title: "Ocurrió un error",
         text: "No se puede obtener la receta, intente esta operación en unos minutos",

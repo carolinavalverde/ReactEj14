@@ -30,7 +30,7 @@ const FormularioReceta = ({ editando, titulo }) => {
     const respuesta = await obtenerRecetaPorId(id);
     if (respuesta.status === 200) {
       const recetaBuscada = await respuesta.json();
-      console.log(recetaBuscada);
+
       setValue("nombreReceta", recetaBuscada.nombreReceta);
       setValue("imagen", recetaBuscada.imagen);
       setValue("descripcion", recetaBuscada.descripcion);
@@ -41,7 +41,6 @@ const FormularioReceta = ({ editando, titulo }) => {
   const datosValidados = async (receta) => {
     if (editando) {
       const respuesta = await editarReceta(receta, id);
-      console.log(respuesta);
 
       if (respuesta.status === 200) {
         Swal.fire({

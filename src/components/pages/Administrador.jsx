@@ -1,14 +1,14 @@
-import { Button, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import ItemReceta from "./receta/ItemReceta";
 import { useEffect, useState } from "react";
 import { leerReceta } from "../../helpers/queries";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Administrador = () => {
   const [recetas, setReceta] = useState([]);
 
   useEffect(() => {
-    //solicitar a la api traer las recetas
     obtenerReceta();
   }, []);
 
@@ -18,7 +18,11 @@ const Administrador = () => {
       const datos = await respuesta.json();
       setReceta(datos);
     } else {
-      //mostrar un mensaje de error al usuario
+      Swal.fire({
+        title: "La receta no se pudo mostrar",
+        text: `La receta no se pudo mostrar, intentelo nuevamente`,
+        icon: "error",
+      });
     }
   };
 

@@ -16,7 +16,6 @@ const ItemReceta = ({ receta, setReceta }) => {
       cancelButtonText: "Cancelar",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        // Solicitar a la API eliminar la receta
         const respuesta = await borrarReceta(receta.id);
         if (respuesta.status === 200) {
           Swal.fire({
@@ -25,7 +24,6 @@ const ItemReceta = ({ receta, setReceta }) => {
             icon: "success",
           });
 
-          // Actualizar tabla del administrador
           const respuestaNuevasRecetas = await leerReceta();
           if (respuestaNuevasRecetas.status === 200) {
             const nuevasRecetas = await respuestaNuevasRecetas.json();
