@@ -1,6 +1,6 @@
 # Asukita Cocina
 
-¡Bienvenido a Asukita Cocina! Esta es una aplicación web donde podrás encontrar una amplia variedad de deliciosas recetas, consejos culinarios y mucho más para inspirarte en la cocina.
+¡Bienvenido a Asukita Cocina! Esta es una aplicación web, inspirada en el personaje de anime de la serie Neon Genesis Evangelion, Asuka Langley; donde podrás encontrar una amplia variedad de deliciosas recetas, consejos culinarios y mucho más para inspirarte en la cocina.
 
 ## Características
 
