@@ -52,6 +52,13 @@ const ItemReceta = ({ receta, setReceta }) => {
         ></img>
       </td>
       <td>{receta.descripcion}</td>
+      <td>
+        <ul>
+          {receta.ingredientes.map((ingrediente, index) => (
+            <li key={index}>{ingrediente}</li>
+          ))}
+        </ul>
+      </td>
       <td>{receta.recetaTexto}</td>
       <td className="text-center">
         <Link

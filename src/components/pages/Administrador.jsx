@@ -43,6 +43,7 @@ const Administrador = () => {
               <th>Nombre</th>
               <th>URL de Imagen</th>
               <th>Descrición</th>
+              <th>Ingredientes</th>
               <th>Receta</th>
               <th></th>
             </tr>
