@@ -30,7 +30,7 @@ const FormularioReceta = ({ editando, titulo }) => {
     const respuesta = await obtenerRecetaPorId(id);
     if (respuesta.status === 200) {
       const recetaBuscada = await respuesta.json();
-      console.log(recetaBuscada)
+      console.log(recetaBuscada);
       setValue("nombreReceta", recetaBuscada.nombreReceta);
       setValue("imagen", recetaBuscada.imagen);
       setValue("descripcion", recetaBuscada.descripcion);

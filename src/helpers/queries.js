@@ -30,7 +30,7 @@ export const crearReceta = async (recetaNueva) => {
 };
 
 //PUT o PATCH
-export const editarReceta = async (productoEditado, id) => {
+export const editarReceta = async (recetaEditada, id) => {
   try {
     const respuesta = await fetch(APIRecetas + "/" + id, {
       method: "PUT",
@@ -62,14 +62,9 @@ export const borrarReceta = async (id) => {
 export const obtenerRecetaPorId = async (id) => {
   try {
     const respuesta = await fetch(APIRecetas + "/" + id);
-    if (respuesta.ok) {
-      const datos = await respuesta.json();
-      return datos;
-    } else {
-      throw new Error("Error al obtener la receta");
-    }
+    console.log(respuesta);
+    return respuesta;
   } catch (error) {
     console.log(error);
-    throw new Error("Error de red");
   }
 };
