@@ -1,6 +1,6 @@
 import { Button, Card, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { useParams , Link} from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { obtenerRecetaPorId } from "../../helpers/queries";
 import Swal from "sweetalert2";
 
@@ -9,33 +9,41 @@ const DetalleReceta = () => {
   const [receta, setReceta] = useState(null);
 
   useEffect(() => {
-    obtenerReceta();
-  }, []);
+    const cargarReceta = async () => {
+      try {
+        const response = await obtenerRecetaPorId(id);
+        const data = await response.json();
+        setReceta(data);
+      } catch (error) {
+        console.error("Error al cargar la receta:", error);
+        Swal.fire({
+          title: "La receta no se pudo cargar",
+          text: `Intentelo nuevamente más tarde.`,
+          icon: "error",
+        });
+      }
+    };
 
-  const obtenerReceta = async () => {
-    try {
-      const datosReceta = await obtenerRecetaPorId(id);
-      setReceta(datosReceta);
-    } catch (error) {
-      Swal.fire({
-        title: "Ocurrió un error",
-        text: "No se puede obtener la receta, intente esta operación en unos minutos",
-        icon: "error",
-      });
-    }
-  };
+    cargarReceta();
+  }, [id]);
 
   if (!receta) {
-    return <div>Cargando...</div>;
+    return null;
   }
+
+  const { imagen, nombreReceta, descripcion, recetaTexto } = receta;
 
   return (
     <section className="mainSection">
       <div className="container my-5 col-9">
-        <Card >
+        <Card>
           <Row>
             <Col md={6}>
-              <Card.Img variant="top" className="img-fluid" src={receta.imagen} />
+              <Card.Img
+                variant="top"
+                className="img-fluid"
+                src={receta.imagen}
+              />
             </Col>
             <Col md={6}>
               <Card.Body>
