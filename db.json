@@ -3,7 +3,7 @@
     {
       "id": "1",
       "nombreReceta": "Ramen Asukita",
-      "imagen": "../src/assets/ramen.png",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHyChgDi7qImcH1t07K8qK3ZhFh2freXChg&usqp=CAU",
       "descripcion": "Sopa japonesa con fideos y caldo aromático.",
       "ingredientes": [
         "Fideos de ramen",
@@ -18,7 +18,7 @@
     {
       "id": "2",
       "nombreReceta": "Mate Argentino SEELE",
-      "imagen": "../src/assets/mate.jpg",
+      "imagen": "https://pbs.twimg.com/media/GHh9wiEXYAAnPXr.jpg",
       "descripcion": "Infusión tradicional sudamericana con yerba mate.",
       "ingredientes": ["Yerba mate"],
       "recetaTexto": "Para preparar el Mate Argentino SEELE, sigue estos pasos:\n\n1. Calienta agua hasta que esté caliente pero no hirviendo.\n2. Llena una calabaza (recipiente para mate) hasta aproximadamente un tercio con yerba mate.\n3. Inserta la bombilla (filtro para mate) en la yerba mate.\n4. Vierte el agua caliente en la calabaza.\n5. Deja reposar por un momento para permitir que la yerba mate se hidrate.\n6. Sujeta la bombilla con los labios y disfruta del mate. Agrega más agua caliente según sea necesario."
@@ -26,7 +26,7 @@
     {
       "id": "3",
       "nombreReceta": "Pizza NERV",
-      "imagen": "../src/assets/pizza.webp",
+      "imagen": "https://pics.craiyon.com/2023-11-20/2UOVYiB5TIGKxKeK1iC5-A.webp",
       "descripcion": "Plato italiano con masa, tomate y queso derretido.",
       "ingredientes": [
         "Masa de pizza",
@@ -39,7 +39,7 @@
     {
       "id": "4",
       "nombreReceta": "Asado Tercer Impacto",
-      "imagen": "../src/assets/asado.jpg",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeG_CKsxMjmHP7tmH0RNh7-6-Yo-v1yab40v5SgPB9GbuNN5ePZNGzWr9cCxccssaAnE4&usqp=CAU",
       "descripcion": "Corte de carne asado a la parrilla o al horno.",
       "ingredientes": [
         "Cortes de carne (res, cerdo, cordero o pollo)",
@@ -65,7 +65,7 @@
     {
       "id": "6",
       "nombreReceta": "Bombones de Chocolate BakaShinji",
-      "imagen": "../src/assets/bombonesDeChocolate.webp",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVkRQIqWKEte31-Xl1cE4KbVA3PLeQK3mOg&usqp=CAU",
       "descripcion": "Dulces de chocolate en pequeñas porciones.",
       "ingredientes": [
         "Chocolate",
@@ -76,7 +76,7 @@
     {
       "id": "7",
       "nombreReceta": "Torta de Frutilla Ángel",
-      "imagen": "../src/assets/tortaDeFrutilla.jpg",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmQjIzHhjfs3i9efwc_5PnSMCvUUINV6Uhg&usqp=CAU",
       "descripcion": "Pastel con capas de bizcocho y crema de frutillas.",
       "ingredientes": ["Bizcocho", "Crema batida", "Frutillas"],
       "recetaTexto": "Para hacer la Torta de Frutilla Ángel, sigue estos pasos:\n\n1. Hornea tu bizcocho favorito en dos moldes para pasteles redondos y deja que se enfríen completamente.\n2. Corta las frutillas en rodajas finas.\n3. Coloca una capa de bizcocho en un plato para servir y cubre con una capa generosa de crema batida.\n4. Coloca algunas rodajas de frutilla sobre la crema batida.\n5. Repite el proceso con la segunda capa de bizcocho, crema batida y frutillas.\n6. Decora la parte superior de la torta con más frutillas.\n7. Refrigera la torta hasta que esté lista para servir.\n8. ¡Disfruta de esta deliciosa y refrescante Torta de Frutilla Ángel en cualquier ocasión especial!"
@@ -84,7 +84,7 @@
     {
       "id": "8",
       "nombreReceta": "Ensalada EVA02",
-      "imagen": "../src/assets/ensaladaEVA.jpg",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQPLqoSvfbJ-Ukm61YJuD6IOPQvuHJkqklkLSU3IgdYhRT2fl-mUsI0Zi-Pfog2YfS1U&usqp=CAU",
       "descripcion": "Ensalada fresca con lechuga, tomate y aderezo.",
       "ingredientes": [
         "Lechuga",
