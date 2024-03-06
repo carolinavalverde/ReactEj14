@@ -51,7 +51,7 @@
     {
       "id": "5",
       "nombreReceta": "Milas con Puré para subir al robot",
-      "imagen": "../src/assets/milasConPure.jpg",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLk2PTxtI0upk8ZG-SyIgmFQAcdt2gBAl3QMdnJrnNXmwy6C8C3ZOkPgKu2dKpAdFyy5Q&usqp=CAU",
       "descripcion": "Filetes de carne empanados con puré de papas.",
       "ingredientes": [
         "Filetes de carne",
